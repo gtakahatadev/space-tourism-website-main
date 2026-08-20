@@ -1,0 +1,118 @@
+/* MOBILE */
+@media (max-width: 480px) {
+  :root {
+    /* Mobile text presets */
+    --text-preset-1: 400 80px/normal var(--font-display);
+    --text-preset-1-letter-spacing: 0px;
+
+    --text-preset-2: 400 56px/normal var(--font-display);
+    --text-preset-2-letter-spacing: 0px;
+
+    --text-preset-3: 400 24px/normal var(--font-display);
+    --text-preset-3-letter-spacing: 0px;
+
+    --text-preset-4: 400 18px/normal var(--font-display);
+    --text-preset-4-letter-spacing: 0px;
+
+    --text-preset-6: 400 16px/normal var(--font-heading);
+    --text-preset-6-letter-spacing: 15%;
+
+    --text-preset-8: 400 14px/normal var(--font-heading);
+    --text-preset-8-letter-spacing: 15%;
+
+    --text-preset-9: 400 15px/180% var(--font-body);
+    --text-preset-9-letter-spacing: 0px;
+
+    --text-preset-8-desktop: 400 16px/19.2% var(--font-heading);
+    --text-preset-8-desktop-letter-spacing: 2px;
+  }
+
+  body {
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 24px;
+  }
+
+  .menu__navbar {
+    display: flex;
+    font: var(--text-preset-8-desktop);
+    letter-spacing: var(--text-preset-8-desktop-letter-spacing);
+  }
+
+  .travel__subt {
+    font: var(--text-preset-6);
+    letter-spacing: var(--text-preset-6-letter-spacing);
+  }
+
+  .travel__title {
+    margin: 24px;
+    font: var(--text-preset-1);
+  }
+
+  .travel__desc {
+    font: var(--text-preset-9);
+  }
+
+  .travel__button {
+    font: var(--text-preset-4);
+  }
+}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    /* Tablet text presets */
+    --text-preset-2: 400 80px/normal var(--font-display);
+    --text-preset-2-letter-spacing: 0px;
+
+    --text-preset-3: 400 40px/normal var(--font-display);
+    --text-preset-3-letter-spacing: 0px;
+
+    --text-preset-4: 400 24px/normal var(--font-display);
+    --text-preset-4-letter-spacing: 0px;
+
+    --text-preset-5: 400 20px/normal var(--font-heading);
+    --text-preset-5-letter-spacing: 0px;
+
+    --text-preset-9: 400 16px/180% var(--font-body);
+    --text-preset-9-letter-spacing: 15%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  :root {
+    /* Text presets */
+    --text-preset-1: 400 144px/171.9% var(--font-display);
+    --text-preset-1-letter-spacing: 0px;
+
+    --text-preset-2: 400 100px/114.6% var(--font-display);
+    --text-preset-2-letter-spacing: 0px;
+
+    --text-preset-3: 400 56px/64.2% var(--font-display);
+    --text-preset-3-letter-spacing: 0px;
+
+    --text-preset-4: 400 32px/36.7% var(--font-display);
+    --text-preset-4-letter-spacing: 0px;
+
+    --text-preset-5: 400 28px/33.6% var(--font-heading);
+    --text-preset-5-letter-spacing: 4px;
+
+    --text-preset-6: 400 28px/32.1% var(--font-display);
+    --text-preset-6-letter-spacing: 0px;
+
+    --text-preset-7: 400 14px/16.8% var(--font-heading);
+    --text-preset-7-letter-spacing: 2px;
+
+    --text-preset-8: 400 16px/19.2% var(--font-heading);
+    --text-preset-8-letter-spacing: 2px;
+
+    --text-preset-8-bold: 700 16px/19.2% var(--font-heading);
+    --text-preset-8-bold-letter-spacing: 2.7px;
+
+    --text-preset-9: 400 18px/180% var(--font-body);
+    --text-preset-9-letter-spacing: 0px;
+  }
+}

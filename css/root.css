@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --primaryColor: #d0d6f9;
+  --secondaryColor: #0b0d17;
+  --tertiaryColor: #ffffff;
+
+  /* Typography */
+  --font-display: "Bellefair", sans-serif;
+  --font-body: "Barlow", sans-serif;
+  --font-heading: "Barlow Condensed", sans-serif;
+
+  /* Spacing */
+  --spaceSmall: 2px;
+  --spaceMed: 32px;
+  --spaceBig: 128px;
+
+  /* --space25: 2px; */
+  /* --space50: 4px; */
+  /* --space100: 8px; */
+  /* --space150: 12px; */
+  /* --space200: 16px; */
+  /* --space300: 24px; */
+  /* --space400: 32px; */
+  /* --space500: 40px; */
+  /* --space600: 48px; */
+  /* --space800: 64px; */
+  /* --space1000: 80px; */
+  /* --space1200: 96px; */
+  /* --space1600: 128px; */
+}
+

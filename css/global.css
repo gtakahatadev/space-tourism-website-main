@@ -1,0 +1,24 @@
+body {
+  color: var(--primaryColor);
+  text-align: center;
+}
+
+.menu__navbar {
+  color: var(--tertiaryColor);
+}
+
+.travel__title {
+  color: var(--tertiaryColor);
+}
+
+.travel__button {
+  color: var(--secondaryColor);
+  border-color: var(--tertiaryColor);
+  background-color: var(--tertiaryColor);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 144px;
+  height: 144px;
+}
