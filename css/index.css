@@ -61,6 +61,9 @@
 
   .menu__navbar--open {
     display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 10;
   }
 
   .travel__subt {
@@ -102,6 +105,67 @@
 
     --text-preset-9: 400 16px/180% var(--font-body);
     --text-preset-9-letter-spacing: 15%;
+
+    --text-preset-1-desktop: 400 144px/171.9% var(--font-display);
+    --text-preset-1-desktop-letter-spacing: 0px;
+
+    --text-preset-4-desktop: 400 32px/36.7% var(--font-display);
+    --text-preset-4-desktop-letter-spacing: 0px;
+
+    --text-preset-5-desktop: 400 28px/33.6% var(--font-heading);
+    --text-preset-5-desktop-letter-spacing: 4px;
+
+    --text-preset-8-desktop: 400 16px/19.2% var(--font-heading);
+    --text-preset-8-desktop-letter-spacing: 2px;
+  }
+
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .menu__logo {
+    margin-top: 24px;
+    margin-left: 40px;
+  }
+
+  .menu__navbar {
+    font: var(--text-preset-8-desktop);
+    letter-spacing: var(--text-preset-8-desktop-letter-spacing);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 40px;
+    padding-left: 117px;
+    padding-top: 38.5px;
+    padding-bottom: 38.5px;
+  }
+
+  .menu__line {
+    display: none;
+  }
+
+  .travel__subt {
+    font: var(--text-preset-5-desktop);
+    letter-spacing: var(--text-preset-5-desktop-letter-spacing);
+    margin-top: 128px;
+  }
+
+  .travel__title {
+    font: var(--text-preset-1-desktop);
+  }
+
+  .travel__desc {
+    font: var(--text-preset-9);
+    letter-spacing: var(--text-preset-9-letter-spacing);
+  }
+
+  .travel__button {
+    font: var(--text-preset-4-desktop);
+    margin-top: 66px;
+    margin-bottom: 128px;
   }
 }
 
@@ -144,6 +208,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .menu{
+      margin-top: 40px;
   }
 
   .menu__logo {
@@ -189,8 +257,6 @@
 
   .travel__button {
     font: var(--text-preset-4);
-    color: var(--secondaryColor);
-    cursor: pointer;
   }
 
   /* HOVER */
