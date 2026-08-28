@@ -120,14 +120,6 @@
     background-position: center;
   }
 
-  .menu {
-    margin-top: 40px;
-  }
-
-  .menu__logo {
-    margin-left: 55px;
-  }
-
   .menu__navbar {
     font: var(--text-preset-8-bold);
     letter-spacing: var(--text-preset-8-bold-letter-spacing);

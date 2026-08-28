@@ -55,23 +55,45 @@
       </ul>
     </nav>
 
-    <!-- 01 Pick your destination
+    <main class="container__destination">
+      <span class="destination__heading">
+        <p class="heading__label">01</p>
+        <p class="heading__label">Pick your destination</p>
+      </span>
+      <!-- caixa do lado esquerdo -->
+      <picture class="destination__image">
+        <img
+          src="assets/destination/image-moon.png"
+          alt="Lua vista do espaço"
+        />
+      </picture>
+      <!-- caixa do lado direito -->
+      <div class="destination__content">
+        <nav class="destination__tabs" aria-label="destination">
+          <a class="tabs__item" href="./destination-moon.html">Moon</a>
+          <a class="tabs__item" href="./destination-mars.html">Mars</a>
+          <a class="tabs__item" href="./destination-europa.html">Europa</a>
+          <a class="tabs__item" href="./destination-titan.html">Titan</a>
+        </nav>
+        <h2 class="destination__name">Moon</h2>
+        <p class="destination__description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days -->
+        <div class="destination__stats">
+          <div class="stat__left">
+            <p class="stat__label">Avg. distance</p>
+            <p class="stat__label">384,400 km</p>
+          </div>
+          <div class="stat__right">
+            <p class="stat__label">Est. travel time</p>
+            <p class="stat__label">3 days</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
