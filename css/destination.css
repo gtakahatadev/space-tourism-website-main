@@ -30,6 +30,19 @@
     grid-row: 1;
   }
 
+  .heading__label1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    opacity: 0.25;
+  }
+
+  .heading__label {
+    font: var(--text-preset-5);
+    letter-spacing: var(--text-preset-5-letter-spacing);
+  }
+
   .destination__image {
     grid-column: 1;
     grid-row: 2;
@@ -47,5 +60,22 @@
     gap: 16px;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .destination__name {
+    font: var(--text-preset-2);
+  }
+
+  .destination__description {
+    font: var(--text-preset-9);
+  }
+
+  .stat__label {
+    font: var(--text-preset-7);
+    letter-spacing: var(--text-preset-7-letter-spacing);
+  }
+
+  .stat__label2 {
+    font: var(--text-preset-6);
   }
 }
