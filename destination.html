@@ -75,13 +75,49 @@
       <!-- caixa do lado direito -->
       <div class="destination__content">
         <nav class="destination__tabs" aria-label="destination">
-          <a class="tabs__item" href="./destination-moon.html">MOON</a>
-          <a class="tabs__item" href="./destination-mars.html">MARS</a>
-          <a class="tabs__item" href="./destination-europa.html">EUROPA</a>
-          <a class="tabs__item" href="./destination-titan.html">TITAN</a>
+          <button
+          id="moon"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="true"
+          >
+            MOON
+          </button>
+          <button
+          id="mars"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            MARS
+          </button>
+          <button
+          id="europa"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            EUROPA
+          </button>
+          <button
+          id="titan"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            TITAN
+          </button>
         </nav>
-        <h2 class="destination__name">MOON</h2>
-        <p class="destination__description">
+        <h2 id="destination-name" class="destination__name">MOON</h2>
+        <p id="destination-description" class="destination__description">
           See our planet as you’ve never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you’re
           there, take in some history by visiting the Luna 2 and Apollo 11
@@ -91,14 +127,16 @@
         <div class="destination__stats">
           <div class="stat__left">
             <p class="stat__label">AVG. DISTANCE</p>
-            <p class="stat__label2">384,400 KM</p>
+            <p id="destination-distance" class="stat__label2">384,400 KM</p>
           </div>
           <div class="stat__right">
             <p class="stat__label">EST. TRAVEL TIME</p>
-            <p class="stat__label2">3 DAYS</p>
+            <p id="destination-travel" class="stat__label2">3 DAYS</p>
           </div>
         </div>
       </div>
     </main>
+    <script src="./js/menu.js"></script>
+    <script src="./js/destination.js"></script>
   </body>
 </html>
