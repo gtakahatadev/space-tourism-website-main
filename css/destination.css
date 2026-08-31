@@ -1,6 +1,88 @@
+.destination__tabs > a {
+  color: var(--tertiaryColor);
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .heading__label1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 15%;
+    opacity: 0.25;
+  }
+
+  .heading__label {
+    font: var(--text-preset-5);
+  }
+
+  /* .destination__tabs {} */
+
+  .destination__name {
+    font: var(--text-preset-2);
+  }
+
+  .destination__description {
+    font: var(--text-preset-9);
+  }
+
+  .stat__label {
+    font: var(--text-preset-7-desktop);
+    letter-spacing: var(--text-preset-7-desktop-letter-spacing);
+  }
+
+  .stat__label2 {
+    font: var(--text-preset-6-desktop);
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .heading__label1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    opacity: 0.25;
+  }
+
+  .heading__label {
+    font: var(--text-preset-5);
+    letter-spacing: var(--text-preset-5-letter-spacing);
+  }
+
+  /* .destination__tabs {} */
+
+  .destination__name {
+    font: var(--text-preset-2);
+  }
+
+  .destination__description {
+    font: var(--text-preset-9);
+  }
+
+  .stat__label {
+    font: var(--text-preset-7);
+    letter-spacing: var(--text-preset-7-letter-spacing);
+  }
+
+  .stat__label2 {
+    font: var(--text-preset-6);
+  }
 }
 @media (min-width: 769px) {
   body {
@@ -20,7 +102,7 @@
     align-items: center;
     width: 85%;
     /* verificar figma dps*/
-    margin: 76px auto;
+    margin: 48px auto;
   }
 
   .destination__heading {
@@ -60,6 +142,8 @@
     gap: 16px;
     justify-content: space-between;
     text-align: left;
+    font: var(--text-preset-8);
+    letter-spacing: var(--text-preset-8-letter-spacing);
   }
 
   .destination__name {

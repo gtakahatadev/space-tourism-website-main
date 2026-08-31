@@ -87,6 +87,12 @@
     --text-preset-5-desktop: 400 28px/33.6% var(--font-heading);
     --text-preset-5-desktop-letter-spacing: 4px;
 
+    --text-preset-6-desktop: 400 28px/32.1% var(--font-display);
+    --text-preset-6-desktop-letter-spacing: 0px;
+
+    --text-preset-7-desktop: 400 14px/16.8% var(--font-heading);
+    --text-preset-7-desktop-letter-spacing: 2px;
+
     --text-preset-8-desktop: 400 16px/19.2% var(--font-heading);
     --text-preset-8-desktop-letter-spacing: 2px;
   }
