@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +24,41 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
+    <nav class="menu">
+      <img
+        class="menu__logo"
+        src="./assets/shared/logo.svg"
+        alt="Space tourism logo"
+      />
+      <div class="menu__line"></div>
+      <button
+        type="button"
+        class="menu__toggle"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="menuNavbar"
+        aria-label="Abrir menu"
+      >
+        <img
+          class="menu__toggle-icon"
+          id="menuToggleIcon"
+          src="./assets/shared/icon-hamburger.svg"
+          alt=""
+        />
+      </button>
+      <ul class="menu__navbar" id="menuNavbar">
+        <li class="navbar__item"><a href="./index.html">00 HOME</a></li>
+        <li class="navbar__item">
+          <a href="./destination.html">01 DESTINATION</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./crew.html">02 CREW</a>
+        </li>
+        <li class="navbar__item">
+          <a href="./technology.html">03 TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
     <!-- 
   00 Home
   01 Destination
