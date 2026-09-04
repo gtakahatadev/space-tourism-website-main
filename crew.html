@@ -59,6 +59,82 @@
         </li>
       </ul>
     </nav>
+    <main class="container__destination">
+      <span class="destination__heading">
+        <p class="heading__label1">02</p>
+        <p class="heading__label">MEET YOUR CREW</p>
+      </span>
+      <!-- caixa do lado esquerdo -->
+      <picture class="destination__image">
+        <img
+          src="assets/crew/image-douglas-hurley.png"
+          alt="Lua vista do espaço"
+        />
+      </picture>
+      <!-- caixa do lado direito -->
+      <div class="destination__content">
+        <nav class="destination__tabs" aria-label="destination">
+          <button
+            id="moon"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="true"
+          >
+            MOON
+          </button>
+          <button
+            id="mars"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            MARS
+          </button>
+          <button
+            id="europa"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            EUROPA
+          </button>
+          <button
+            id="titan"
+            class="tabs_item"
+            type="button"
+            data-destination="moon"
+            role="tab"
+            aria-selected="false"
+          >
+            TITAN
+          </button>
+        </nav>
+        <h2 id="destination-name" class="destination__name">MOON</h2>
+        <p id="destination-description" class="destination__description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+
+        <div class="destination__stats">
+          <div class="stat__left">
+            <p class="stat__label">AVG. DISTANCE</p>
+            <p id="destination-distance" class="stat__label2">384,400 KM</p>
+          </div>
+          <div class="stat__right">
+            <p class="stat__label">EST. TRAVEL TIME</p>
+            <p id="destination-travel" class="stat__label2">3 DAYS</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- 
   00 Home
   01 Destination
