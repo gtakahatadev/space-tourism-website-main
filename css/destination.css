@@ -134,6 +134,9 @@
     grid-column: 2;
     grid-row: 2;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .destination__tabs {
@@ -145,12 +148,30 @@
     letter-spacing: var(--text-preset-8-letter-spacing);
   }
 
+  .tabs_item {
+    border-radius: 0;
+    background-color: transparent;
+    border-style: none;
+    color: var(--primaryColor);
+    font: var(--text-preset-8);
+    letter-spacing: var(--text-preset-8-letter-spacing);
+    transition: 0.3s ease-in;
+  }
+
+   .tabs_item:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--tertiaryColor);
+    text-align:end;
+    /* verificar letter spacing do item */
+   }
+
   .destination__name {
     font: var(--text-preset-2);
   }
 
   .destination__description {
     font: var(--text-preset-9);
+    height: 250px;
   }
 
   .stat__label {

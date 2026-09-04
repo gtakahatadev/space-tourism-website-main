@@ -29,7 +29,8 @@ const destinations = {
     }
 }
 
-let destinationName = document.getElementById("destinationName");
+let destinationName = document.getElementById("destination-name");
+let destinationImage = document.getElementById("destination-img")
 let destinationDescription = document.getElementById("destination-description");
 let destinationDistance = document.getElementById("destination-distance");
 let destinationTravel = document.getElementById("destination-travel");
@@ -43,12 +44,54 @@ let titan = document.getElementById("titan");
 
 // Métodos de eventos
 
-moon.addEventListener("click", function () { });
-// quando eu clicar na função eu quero capturar o atributo
-// se o valor do aria selected for true eu quero que ele não faça nada
-// se for false eu preciso trocar o valor para true e renderizar (alterar os elementos: o titulo, a imagem, a descrição, distancia e tempo de viagem)
-mars.addEventListener("click", function () { });
+moon.addEventListener("click", function () {
+    destinationName.textContent = destinations.moon.name;
+    destinationImage.src = destinations.moon.webp;
+    destinationDescription.textContent = destinations.moon.description;
+    destinationDistance.textContent = destinations.moon.distance;
+    destinationTravel.textContent = destinations.moon.travel;
 
-europa.addEventListener("click", function () { });
+    moon.setAttribute("aria-selected", "true");
+    mars.setAttribute("aria-selected", "false");
+    europa.setAttribute("aria-selected", "false");
+    titan.setAttribute("aria-selected", "false");
+});
 
-titan.addEventListener("click", function () { });
+mars.addEventListener("click", function () {
+    destinationName.textContent = destinations.mars.name;
+    destinationImage.src = destinations.mars.webp;
+    destinationDescription.textContent = destinations.mars.description;
+    destinationDistance.textContent = destinations.mars.distance;
+    destinationTravel.textContent = destinations.mars.travel;
+
+    moon.setAttribute("aria-selected", "false");
+    mars.setAttribute("aria-selected", "true");
+    europa.setAttribute("aria-selected", "false");
+    titan.setAttribute("aria-selected", "false");
+});
+
+europa.addEventListener("click", function () {
+    destinationName.textContent = destinations.europa.name;
+    destinationImage.src = destinations.europa.webp;
+    destinationDescription.textContent = destinations.europa.description;
+    destinationDistance.textContent = destinations.europa.distance;
+    destinationTravel.textContent = destinations.europa.travel;
+
+    moon.setAttribute("aria-selected", "false");
+    mars.setAttribute("aria-selected", "false");
+    europa.setAttribute("aria-selected", "true");
+    titan.setAttribute("aria-selected", "false");
+});
+
+titan.addEventListener("click", function () {
+    destinationName.textContent = destinations.titan.name;
+    destinationImage.src = destinations.titan.webp;
+    destinationDescription.textContent = destinations.titan.description;
+    destinationDistance.textContent = destinations.titan.distance;
+    destinationTravel.textContent = destinations.titan.travel;
+
+    moon.setAttribute("aria-selected", "false");
+    mars.setAttribute("aria-selected", "false");
+    europa.setAttribute("aria-selected", "false");
+    titan.setAttribute("aria-selected", "true");
+});
