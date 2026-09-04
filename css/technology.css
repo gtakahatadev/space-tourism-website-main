@@ -1,0 +1,27 @@
+@media (max-width: 480px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    min-height: 100vh;
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
