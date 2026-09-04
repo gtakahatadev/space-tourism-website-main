@@ -140,6 +140,8 @@
   }
 
   .destination__tabs {
+    height: 50px;
+    transition: 0.3s ease-in-out;
     display: flex;
     gap: 16px;
     justify-content: space-between;
@@ -155,15 +157,14 @@
     color: var(--primaryColor);
     font: var(--text-preset-8);
     letter-spacing: var(--text-preset-8-letter-spacing);
-    transition: 0.3s ease-in;
   }
 
-   .tabs_item:hover {
+  .tabs_item:hover {
     cursor: pointer;
     border-bottom: 1px solid var(--tertiaryColor);
-    text-align:end;
+    text-align: end;
     /* verificar letter spacing do item */
-   }
+  }
 
   .destination__name {
     font: var(--text-preset-2);
