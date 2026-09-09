@@ -17,7 +17,6 @@ body {
 }
 
 .menu__line {
-  /* border: 2px solid white; */
   width: 560px;
   height: 1px;
   background-color: #979797;
@@ -58,7 +57,6 @@ body {
   padding-left: 159px;
   padding-top: 38.5px;
   padding-bottom: 38.5px;
-  /* transform: translateX(100%); */
 }
 
 .navbar__item > a {
