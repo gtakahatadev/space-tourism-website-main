@@ -59,95 +59,71 @@
         </li>
       </ul>
     </nav>
-    <main class="container__destination">
-      <span class="destination__heading">
+    <main class="container__crew">
+      <span class="crew__heading">
         <p class="heading__label1">02</p>
         <p class="heading__label">MEET YOUR CREW</p>
       </span>
       <!-- caixa do lado esquerdo -->
-      <picture class="destination__image">
+      <picture class="crew">
         <img
+          id="crew-img"
           src="assets/crew/image-douglas-hurley.png"
-          alt="Lua vista do espaço"
+          alt="Comandante Douglas Hurley"
         />
       </picture>
       <!-- caixa do lado direito -->
-      <div class="destination__content">
-        <nav class="destination__tabs" aria-label="destination">
+      <div class="crew__content">
+        <nav class="crew__tabs" aria-label="crew">
           <button
-            id="moon"
+            id="commander"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-crew="commander"
             role="tab"
             aria-selected="true"
           >
-            MOON
+            COMMANDER
           </button>
           <button
-            id="mars"
+            id="specialist"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-crew="specialist"
             role="tab"
             aria-selected="false"
           >
-            MARS
+            SPECIALIST
           </button>
           <button
-            id="europa"
+            id="pilot"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-crew="pilot"
             role="tab"
             aria-selected="false"
           >
-            EUROPA
+            PILOT
           </button>
           <button
-            id="titan"
+            id="engineer"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-crew="engineer"
             role="tab"
             aria-selected="false"
           >
-            TITAN
+            ENGINEER
           </button>
         </nav>
-        <h2 id="destination-name" class="destination__name">MOON</h2>
-        <p id="destination-description" class="destination__description">
-          See our planet as you’ve never seen it before. A perfect relaxing trip
-          away to help regain perspective and come back refreshed. While you’re
-          there, take in some history by visiting the Luna 2 and Apollo 11
-          landing sites.
+        <h3 id="crew-role" class="crew__role">COMMANDER</h3>
+        <h2 id="crew-name" class="crew__name">DOUGLAS HURLEY</h2>
+        <p id="crew-description" class="crew__description">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
         </p>
-
-        <div class="destination__stats">
-          <div class="stat__left">
-            <p class="stat__label">AVG. DISTANCE</p>
-            <p id="destination-distance" class="stat__label2">384,400 KM</p>
-          </div>
-          <div class="stat__right">
-            <p class="stat__label">EST. TRAVEL TIME</p>
-            <p id="destination-travel" class="stat__label2">3 DAYS</p>
-          </div>
-        </div>
-      </div>
     </main>
-    <!-- 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2. -->
+    <script src="js/crew.js"></script>
   </body>
 </html>
