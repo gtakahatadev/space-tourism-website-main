@@ -61,11 +61,11 @@
     </nav>
     <main class="container__crew">
       <span class="crew__heading">
-        <p class="heading__label1">02</p>
+        <p class="heading__number">02</p>
         <p class="heading__label">MEET YOUR CREW</p>
       </span>
       <!-- caixa do lado esquerdo -->
-      <picture class="crew">
+      <picture class="crew__image">
         <img
           id="crew-img"
           src="assets/crew/image-douglas-hurley.png"
@@ -82,7 +82,9 @@
             data-crew="commander"
             role="tab"
             aria-selected="true"
-          ></button>
+          >
+            commander
+          </button>
           <button
             id="specialist"
             class="tabs_item"
@@ -90,7 +92,9 @@
             data-crew="specialist"
             role="tab"
             aria-selected="false"
-          ></button>
+          >
+            specialist
+          </button>
           <button
             id="pilot"
             class="tabs_item"
@@ -98,7 +102,9 @@
             data-crew="pilot"
             role="tab"
             aria-selected="false"
-          ></button>
+          >
+            pilot
+          </button>
           <button
             id="engineer"
             class="tabs_item"
@@ -106,7 +112,9 @@
             data-crew="engineer"
             role="tab"
             aria-selected="false"
-          ></button>
+          >
+            engineer
+          </button>
         </nav>
         <h3 id="crew-role" class="crew__role">COMMANDER</h3>
         <h2 id="crew-name" class="crew__name">DOUGLAS HURLEY</h2>

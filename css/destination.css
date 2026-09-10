@@ -7,7 +7,7 @@
     background-position: center;
   }
 
-  .heading__label1 {
+  .heading__number {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 16px;
@@ -38,7 +38,7 @@
     letter-spacing: var(--text-preset-7-desktop-letter-spacing);
   }
 
-  .stat__label2 {
+  .stat__value {
     font: var(--text-preset-6-desktop);
   }
 }
@@ -51,7 +51,7 @@
     background-position: center;
   }
 
-  .heading__label1 {
+  .heading__number {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 28px;
@@ -82,7 +82,7 @@
     letter-spacing: var(--text-preset-7-letter-spacing);
   }
 
-  .stat__label2 {
+  .stat__value {
     font: var(--text-preset-6);
   }
 }
@@ -112,7 +112,7 @@
     grid-row: 1;
   }
 
-  .heading__label1 {
+  .heading__number {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 28px;
@@ -211,7 +211,7 @@
     letter-spacing: var(--text-preset-7-letter-spacing);
   }
 
-  .stat__label2 {
+  .stat__value {
     font: var(--text-preset-6);
   }
 }

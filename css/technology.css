@@ -6,6 +6,40 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .heading__number {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 15em;
+    opacity: 0.25;
+  }
+
+  .heading__label {
+    font: var(--text-preset-6);
+    letter-spacing: var(--text-preset-6-letter-spacing);
+  }
+
+  /* BOTÕES
+  .technology__tabs {
+  } */
+
+  .tabs_item {
+    font: var(--text-preset-4);
+  }
+
+  .stat__label {
+    font: var(--text-preset-4);
+    opacity: 0.5042;
+  }
+
+  .technology__name {
+    font: var(--text-preset-3);
+  }
+
+  .technology__description {
+    font: var(--text-preset-9);
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   body {
@@ -14,6 +48,40 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .heading__number {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 15em;
+    opacity: 0.25;
+  }
+
+  .heading__label {
+    font: var(--text-preset-5);
+  }
+
+  /* BOTÕES
+  .technology__tabs {
+  } */
+
+  .tabs_item {
+    font: var(--text-preset-4);
+  }
+
+  .stat__label {
+    font: var(--text-preset-4);
+    opacity: 0.5042;
+  }
+
+  .technology__name {
+    font: var(--text-preset-3);
+  }
+
+  .technology__description {
+    font: var(--text-preset-9);
+    letter-spacing: var(--text-preset-9-letter-spacing);
   }
 }
 @media (min-width: 769px) {
@@ -24,7 +92,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .container__destination {
+
+  .container__technology {
     display: grid;
     grid-template-columns: 45% 40%;
     grid-template-rows: auto 1fr;
@@ -35,13 +104,13 @@
     margin: 48px auto;
   }
 
-  .destination__heading {
+  .technology__heading {
     display: flex;
     grid-column: 1 / 3;
     grid-row: 1;
   }
 
-  .heading__label1 {
+  .heading__number {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 28px;
@@ -54,21 +123,87 @@
     letter-spacing: var(--text-preset-5-letter-spacing);
   }
 
-  .destination__image {
+  .technology__image {
     grid-column: 1;
     grid-row: 2;
   }
 
-  .destination__content {
+  .technology__content {
     grid-column: 2;
     grid-row: 2;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
-  .destination__tabs {
+  /* BOTÕES */
+  .technology__tabs {
+    height: 50px;
+    transition: 0.3s ease-in-out;
     display: flex;
     gap: 16px;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .tabs_item {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--primaryColor);
+    font: var(--text-preset-4);
+    cursor: pointer;
+    padding: 0 0 12px;
+  }
+
+  .tabs_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primaryColor);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .tabs_item[aria-selected="true"]::after {
+    opacity: 1;
+  }
+
+  .tabs_item[aria-selected="false"]:hover::after {
+    opacity: 0.5;
+  }
+
+  /* .tabs_item {
+    border-radius: 0;
+    background-color: transparent;
+    border-style: none;
+    color: var(--primaryColor);
+    font: var(--text-preset-8);
+    letter-spacing: var(--text-preset-8-letter-spacing);
+  }
+
+  .tabs_item:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--tertiaryColor);
+    text-align: end;} */
+  /* verificar letter spacing do item */
+
+  .stat__label {
+    font: var(--text-preset-4);
+    opacity: 0.5042;
+  }
+
+  .technology__name {
+    font: var(--text-preset-3);
+  }
+
+  .technology__description {
+    font: var(--text-preset-9);
+    height: 250px;
   }
 }
