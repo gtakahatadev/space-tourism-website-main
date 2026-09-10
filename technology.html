@@ -65,48 +65,40 @@
         <p class="heading__number">03</p>
         <p class="heading__label">SPACE LAUNCH 101</p>
       </span>
-      <!-- caixa do lado esquerdo -->
-      <picture class="technology__image">
-        <img
-          id="technology-img"
-          src="assets/technology/image-launch-vehicle-portrait.jpg"
-          alt="Lua vista do espaço"
-        />
-      </picture>
-      <!-- caixa do lado direito -->
+      <nav class="technology__tabs" aria-label="technology">
+        <button
+          id="launch"
+          class="tabs_item"
+          type="button"
+          data-technology="launch"
+          role="tab"
+          aria-selected="true"
+        >
+          1
+        </button>
+        <button
+          id="spaceport"
+          class="tabs_item"
+          type="button"
+          data-technology="spaceport"
+          role="tab"
+          aria-selected="false"
+        >
+          2
+        </button>
+        <button
+          id="capsule"
+          class="tabs_item"
+          type="button"
+          data-technology="capsule"
+          role="tab"
+          aria-selected="false"
+        >
+          3
+        </button>
+      </nav>
+
       <div class="technology__content">
-        <nav class="technology__tabs" aria-label="technology">
-          <button
-            id="launch"
-            class="tabs_item"
-            type="button"
-            data-technology="launch"
-            role="tab"
-            aria-selected="true"
-          >
-            1
-          </button>
-          <button
-            id="spaceport"
-            class="tabs_item"
-            type="button"
-            data-technology="spaceport"
-            role="tab"
-            aria-selected="false"
-          >
-            2
-          </button>
-          <button
-            id="capsule"
-            class="tabs_item"
-            type="button"
-            data-technology="capsule"
-            role="tab"
-            aria-selected="false"
-          >
-            3
-          </button>
-        </nav>
         <p class="stat__label">THE TERMINOLOGY...</p>
         <h2 id="technology-name" class="technology__name">LAUNCH VEHICLE</h2>
         <p id="technology-description" class="technology__description">
@@ -117,6 +109,14 @@
           on the launch pad!
         </p>
       </div>
+      <!-- IMAGEM -->
+      <picture class="technology__image">
+        <img
+          id="technology-img"
+          src="assets/technology/image-launch-vehicle-portrait.jpg"
+          alt="Veículo de lançamento decolando"
+        />
+      </picture>
     </main>
     <script src="./js/menu.js"></script>
     <script src="./js/technology.js"></script>
