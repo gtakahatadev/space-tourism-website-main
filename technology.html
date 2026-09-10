@@ -59,83 +59,66 @@
         </li>
       </ul>
     </nav>
-    <main class="container__destination">
-      <span class="destination__heading">
+
+    <main class="container__technology">
+      <span class="technology__heading">
         <p class="heading__label1">03</p>
         <p class="heading__label">SPACE LAUNCH 101</p>
       </span>
       <!-- caixa do lado esquerdo -->
-      <picture class="destination__image">
+      <picture class="technology__image">
         <img
-          id="destination-img"
+          id="technology-img"
           src="assets/technology/image-launch-vehicle-portrait.jpg"
           alt="Lua vista do espaço"
         />
       </picture>
       <!-- caixa do lado direito -->
-      <div class="destination__content">
-        <nav class="destination__tabs" aria-label="destination">
+      <div class="technology__content">
+        <nav class="technology__tabs" aria-label="technology">
           <button
-            id="moon"
+            id="launch"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-technology="launch"
             role="tab"
             aria-selected="true"
           >
-            MOON
+            1
           </button>
           <button
-            id="mars"
+            id="spaceport"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-technology="spaceport"
             role="tab"
             aria-selected="false"
           >
-            MARS
+            2
           </button>
           <button
-            id="europa"
+            id="capsule"
             class="tabs_item"
             type="button"
-            data-destination="moon"
+            data-technology="capsule"
             role="tab"
             aria-selected="false"
           >
-            EUROPA
-          </button>
-          <button
-            id="titan"
-            class="tabs_item"
-            type="button"
-            data-destination="moon"
-            role="tab"
-            aria-selected="false"
-          >
-            TITAN
+            3
           </button>
         </nav>
-        <h2 id="destination-name" class="destination__name">MOON</h2>
-        <p id="destination-description" class="destination__description">
-          See our planet as you’ve never seen it before. A perfect relaxing trip
-          away to help regain perspective and come back refreshed. While you’re
-          there, take in some history by visiting the Luna 2 and Apollo 11
-          landing sites.
+        <p class="stat__label">THE TERMINOLOGY...</p>
+        <h2 id="technology-name" class="technology__name">LAUNCH VEHICLE</h2>
+        <p id="technology-description" class="technology__description">
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth's surface to space, usually to Earth
+          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+          on the launch pad!
         </p>
-
-        <div class="destination__stats">
-          <div class="stat__left">
-            <p class="stat__label">AVG. DISTANCE</p>
-            <p id="destination-distance" class="stat__label2">384,400 KM</p>
-          </div>
-          <div class="stat__right">
-            <p class="stat__label">EST. TRAVEL TIME</p>
-            <p id="destination-travel" class="stat__label2">3 DAYS</p>
-          </div>
-        </div>
       </div>
     </main>
-    <script src="js/technology.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/technology.js"></script>
   </body>
 </html>

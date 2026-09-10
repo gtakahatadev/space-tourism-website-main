@@ -43,7 +43,7 @@ commander.addEventListener("click", function () {
     crewName.textContent = crew.commander.name;
     crewImage.src = crew.commander.webp;
     crewDescription.textContent = crew.commander.description;
-    crewrole.textContent = crew.commander.role;
+    crewRole.textContent = crew.commander.role;
 
     commander.setAttribute("aria-selected", "true");
     specialist.setAttribute("aria-selected", "false");
@@ -55,7 +55,7 @@ specialist.addEventListener("click", function () {
     crewName.textContent = crew.specialist.name;
     crewImage.src = crew.specialist.webp;
     crewDescription.textContent = crew.specialist.description;
-    crewrole.textContent = crew.specialist.role;
+    crewRole.textContent = crew.specialist.role;
 
     commander.setAttribute("aria-selected", "false");
     specialist.setAttribute("aria-selected", "true");
@@ -67,7 +67,7 @@ pilot.addEventListener("click", function () {
     crewName.textContent = crew.pilot.name;
     crewImage.src = crew.pilot.webp;
     crewDescription.textContent = crew.pilot.description;
-    crewrole.textContent = crew.pilot.role;
+    crewRole.textContent = crew.pilot.role;
 
     commander.setAttribute("aria-selected", "false");
     specialist.setAttribute("aria-selected", "false");
@@ -79,7 +79,7 @@ engineer.addEventListener("click", function () {
     crewName.textContent = crew.engineer.name;
     crewImage.src = crew.engineer.webp;
     crewDescription.textContent = crew.engineer.description;
-    crewrole.textContent = crew.engineer.role;
+    crewRole.textContent = crew.engineer.role;
 
     commander.setAttribute("aria-selected", "false");
     specialist.setAttribute("aria-selected", "false");
