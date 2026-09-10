@@ -60,10 +60,27 @@ body {
 }
 
 .navbar__item > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   color: var(--tertiaryColor);
   text-decoration: none;
 }
 
+.navbar__item > a.active {
+  color: var(--tertiaryColor);
+}
+
+.navbar__item > a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -39px;
+  height: 3px;
+  background-color: var(--tertiaryColor);
+}
 /* MOBILE */
 @media (max-width: 480px) {
   .menu__line {
