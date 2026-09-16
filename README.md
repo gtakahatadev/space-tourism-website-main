@@ -39,7 +39,11 @@ cd space-tourism-website-main
 
 ## Demo ao vivo
 
+https://space-tourism-website-main-mou8.vercel.app/
+
 ## Authors
+
+Gabriel Takahata
 
 ## License
 
